@@ -52,15 +52,12 @@ class SearchFragment : Fragment() {
         viewModel.products.observe(viewLifecycleOwner){result ->
             when(result){
                 is Resource.Success -> {
-                    Log.i("SearchFragment","the idiot dey successful sha ${result.data}")
                     productsList = result.data!!
                     adapter.differ.submitList(result.data)
                 }
                 is Resource.Loading -> {
-                    Log.i("SearchFragment","the idiot dey load")
                 }
                 is Resource.Error -> {
-                    Log.i("SearchFragment","the idiot fail sha, ${result.message}")
                 }
             }
         }

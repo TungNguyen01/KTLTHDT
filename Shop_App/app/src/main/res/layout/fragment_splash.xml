@@ -14,15 +14,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.45999998"
-        app:srcCompat="@drawable/ic_logo" />
+        app:srcCompat="@drawable/img" />
 
     <TextView
         android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/dm_sans_bold"
-        android:text="ShopIT"
-        android:textColor="@color/green"
+        android:text="Shop"
+        android:textColor="@color/black"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

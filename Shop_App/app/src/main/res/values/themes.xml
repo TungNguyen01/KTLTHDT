@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.ShopIT" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimary">@color/grey_one</item>
         <item name="colorPrimaryVariant">@color/black</item>
         <item name="colorOnPrimary">@color/accent</item>
         <!-- Secondary brand color. -->

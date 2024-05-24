@@ -27,17 +27,17 @@ class RegisterViewModel @Inject constructor(
         authUseCase.registerUser(username, password).onEach { result ->
             when(result){
                 is Resource.Loading -> {
-                    Log.i("LoginViewModel","I dey here, Loading")
+                    Log.i("LoginViewModel","Loading")
                 }
                 is Resource.Error -> {
                     error.postValue("${result.message}")
                     successful.postValue(false)
-                    Log.i("LoginViewModel","I dey here, Error ${result.message}")
+                    Log.i("LoginViewModel","Error ${result.message}")
                 }
                 is Resource.Success -> {
                     successful.postValue(true)
                     saveUserAccessToken(username)
-                    Log.i("LoginViewModel","I dey here, Success ${result.data.toString()}")
+                    Log.i("LoginViewModel","Success ${result.data.toString()}")
                 }
             }
         }.launchIn(viewModelScope)
